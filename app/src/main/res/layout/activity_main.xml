@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroud">
+
+    <TextView
+        android:fontFamily="@font/algoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:id="@+id/signin"
+        android:text="Sign In" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="username"
+        android:background="@drawable/custom_input"
+        style="@style/text_fields_style" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/username"
+        android:background="@drawable/custom_input"
+        android:hint="password"
+        android:inputType="textPassword"
+        style="@style/text_fields_style" />
+
+    <com.google.android.material.button.MaterialButton
+        android:fontFamily="@font/algoria"
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="LOGIN"
+        android:textSize="25dp" />
+
+   <TextView
+       android:fontFamily="@font/algoria"
+       android:id="@+id/forget_password"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="forgot your password ?"
+       android:textSize="15dp"
+       android:textColor="@color/white"
+       android:layout_below="@id/login_button"
+       android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/social_icons"
+        android:text="Or sign with "
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/social_icons"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/gmail_icon"
+            android:src="@drawable/gmail"
+            style="@style/icons_style" />
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:src="@drawable/facebook"
+            style="@style/icons_style" />
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:src="@drawable/twitter"
+            style="@style/icons_style"/>
+   </LinearLayout>
+
+
+
+</RelativeLayout>
